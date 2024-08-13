@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Cart Quantity</title>
+  </head>
+  <body>
+    <button onclick       
+     ="console.log(`Cart Quantity:             
+       ${cartQuantity}`);">
+      Show Quantity</button>
+      
+
+    <button onclick="
+      cartQuantity = cartQuantity +1;
+      //cartQuantity++;
+      document.querySelector('.cartQuantitynet').innerText = `Cart quantity is ${cartQuantity} items `;
+      ;">Add to 
+     Cart</button>
+
+    <button onclick="
+      cartQuantity = cartQuantity +2;
+      //cartQuantity =+ 2;
+      document.querySelector('.cartQuantitynet').innerText = `Cart quantity is ${cartQuantity} items `;"
+>+2</button>
+
+    <button onclick="
+    cartQuantity = cartQuantity +3;
+    document.querySelector('.cartQuantitynet').innerText = `Cart quantity is ${cartQuantity} items `;">+3</button>
+
+    <button onclick="
+      cartQuantity = 0;
+      document.querySelector('.cartQuantitynet').innerText = `Cart quantity is ${cartQuantity} items `;
+      ">Reset Cart</button>
+
+    <h1 class="cartQuantitynet"></h1>
+
+  <script>
+        let cartQuantity = 0;
+        //camelCase concept in variable case is cartQuantity
+        //PascalCase concept in variable case is CartQuantity
+        document.querySelector('.cartQuantitynet').innerText = `Cart quantity is ${cartQuantity} items `;
+
+
+  </script>
+
+
+  </body>
+</html>
